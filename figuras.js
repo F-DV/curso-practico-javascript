@@ -85,6 +85,32 @@ function areaCirculo(radio){
 }
 console.groupEnd();
 
+//Claculo de triangulo isoceles
+function alturaTrianguloIsoceles(lado1, lado2, lado3){
+    //convertimos a triangulo rectangulo
+    let catetoOpuesto;                  //El catetoOpuesto es igual a la altura
+    let catetoAdyacente;
+    let hipotenusa;
+
+    if(lado1 == lado2){
+        hipotenusa = lado1;
+        catetoAdyacente = lado3/2;
+    }else if(lado1 == lado3){
+        hipotenusa = lado1;
+        catetoAdyacente = lado2/2;
+    }else if(lado2 == lado3){
+        hipotenusa = lado2;
+        catetoAdyacente = lado1/2;
+    }else{
+        console.log("Las medidas No corresponde a un triangulo isoceles")
+    }
+    //calculo de altura
+   catetoOpuesto = Math.sqrt(Math.pow(hipotenusa,2)-Math.pow(catetoAdyacente,2));
+    
+    return catetoOpuesto;
+}
+
+
 //Aqui interactuamos con el html
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado"); //capturamos la entrada del usuario en el Html
