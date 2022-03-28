@@ -4,8 +4,7 @@ const lista1 = [
     300,
     500
 ];
-
-//calcular la media aritmetica
+//CALCULAMOS MEDIA ARITMETICA
 /*
 let sumaLista1 = 0;
 for(let i=0; i < lista1.length; i++){
