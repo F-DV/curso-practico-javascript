@@ -29,3 +29,4 @@ curso para reforzar los conocimientos en javascript
 - El PetProyect consiste en un analizador de ahorro y creditos de un banco
 - se iran añadiendo funcionalidades a la par que se aprendan conceptos
 - Empezaremos con un calculador basico de interes anual sobre un monto
+- El proyecto de le har'a deployment en Github
